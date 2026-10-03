@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./*.html'],
+  // used only by the PHP templates in kollargumi-com (tools/build_from_redesign.py)
+  safelist: ['text-right', 'overflow-x-auto', 'px-3', 'md:p-6', 'md:text-5xl'],
   theme: {
     extend: {
       colors: {
